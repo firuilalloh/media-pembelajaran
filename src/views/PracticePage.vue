@@ -101,7 +101,7 @@ const retryQuiz = () => {
         @click="goBack"
         class="p-2 bg-gradient-to-r from-sky-400 to-teal-400 hover:from-sky-500 hover:to-teal-500 rounded-full transition flex items-center justify-center shadow-md focus:outline-none focus:ring-4 focus:ring-sky-300"
       >
-        <Icon icon="mdi:home" class="w-10 h-10 text-white" />
+        <Icon icon="mdi:home" class="w-8 h-8 md:w-10 md:h-10 text-white" />
       </button>
     </div>
 
