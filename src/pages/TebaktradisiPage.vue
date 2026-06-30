@@ -72,18 +72,18 @@ const resetQuiz = () => {
         </button>
       </div>
 
-      <div class="flex justify-between mt-4">
+      <div class="flex justify-between gap-2 mt-4">
         <button
           @click="prevQuestion"
           :disabled="currentIndex === 0"
-          class="px-6 py-2 bg-slate-200 rounded-xl font-bold disabled:opacity-50"
+          class="md:px-6 px-4 py-2 bg-slate-200 rounded-xl font-bold disabled:opacity-50"
         >
           Sebelumnya
         </button>
         <button
           @click="nextQuestion"
           :disabled="!userAnswers[currentQuestion.id]"
-          class="px-6 py-2 bg-emerald-500 text-white rounded-xl font-bold disabled:opacity-50"
+          class="md:px-6 px-4 py-2 bg-emerald-500 text-white rounded-xl font-bold disabled:opacity-50"
         >
           {{
             currentIndex === act1Questions.length - 1
