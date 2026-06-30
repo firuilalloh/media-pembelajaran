@@ -2,11 +2,10 @@
 import { ref } from "vue";
 import { Icon } from "@iconify/vue";
 import { useRouter } from "vue-router";
-import Modal from "../components/Modal.vue"; // Pastikan path import sesuai
+import Modal from "../components/Modal.vue";
 
 const router = useRouter();
 
-// State untuk Modal
 const activeModal = ref(false);
 const modalData = ref({
   title: "",
@@ -14,20 +13,24 @@ const modalData = ref({
   variant: "blue",
 });
 
-// Konten untuk Materi dan Tujuan
 const showModal = (type) => {
   if (type === "materi") {
     modalData.value = {
       title: "MATERI",
-      content:
-        "Di sini kamu akan belajar tentang berbagai tradisi keluarga dan kebiasaan di masyarakat sekitar. Kita akan menjelajahi bagaimana tradisi dibentuk dan mengapa itu penting untuk dilestarikan.",
+      isCarousel: true,
+      carouselContent: [
+        "Tradisi adalah kebiasaan yang dilakukan secara turun-temurun dalam keluarga maupun masyarakat.\n\nContoh tradisi:\n- makan bersama\n- gotong royong\n- kerja bakti\n- perayaan hari besar",
+        "Tradisi keluarga adalah kebiasaan baik yang dilakukan bersama anggota keluarga.\n\nContoh:\n- makan bersama\n- berdoa bersama\n- membersihkan rumah\n\nManfaat:\n- mempererat hubungan keluarga\n- menumbuhkan kasih sayang\n- membentuk kebiasaan baik",
+        "Tradisi masyarakat adalah kebiasaan yang dilakukan bersama warga sekitar.\n\nContoh:\n- gotong royong\n- kerja bakti\n- musyawarah warga\n\nManfaat:\n- menjaga kerukunan\n- mempererat persatuan\n- menumbuhkan kepedulian",
+        "Tradisi perlu dijaga agar tidak hilang.\n\nCara melestarikan:\n- ikut kegiatan tradisi\n- menghargai budaya\n- menjaga kebersamaan",
+      ],
       variant: "blue",
     };
   } else if (type === "tujuan") {
     modalData.value = {
       title: "TUJUAN PEMBELAJARAN",
       content:
-        "1. Mengidentifikasi dan mengenal ragam tradisi atau budaya dalam keluarga dan masyarakat yang ada di Indonesia.\n\n2. Mengetahui pengaruh kebiasaan ragam tradisi atau budaya dalam keluarga dan masyarakat.\n\n3. Mengaplikasikan nilai positif yang berasal dari ragam tradisi atau budaya dalam keluarga dan masyarakat.",
+        "1. Peserta didik mampu mengenal pengertian tradisi keluarga dan masyarakat sekitar dengan benar.\n\n2. Peserta didik mampu mengidentifikasi berbagai contoh tradisi yang ada di lingkungan keluarga dan masyarakat sekitar.\n\n3. Peserta didik mampu menjelaskan manfaat tradisi dalam kehidupan sehari-hari.\n\n4. Peserta didik mampu menunjukkan sikap menghargai tradisi yang ada di lingkungan keluarga dan masyarakat.\n\n5. Peserta didik mampu menerapkan nilai-nilai positif seperti kebersamaan, gotong royong, dan saling menghormati dalam kehidupan sehari-hari.",
       variant: "green",
     };
   }
@@ -46,7 +49,7 @@ const goBack = () => {
       <h1 class="text-4xl font-bold text-white">TUJUAN</h1>
       <button
         @click="goBack"
-        class="p-2 bg-gradient-to-r from-sky-400 to-teal-400 hover:from-sky-500 hover:to-teal-500 rounded-full transition flex items-center justify-center shadow-md"
+        class="p-2 bg-linear-to-r from-sky-400 to-teal-400 hover:from-sky-500 hover:to-teal-500 rounded-full transition flex items-center justify-center shadow-md"
       >
         <Icon icon="mdi:home" class="w-8 h-8 md:w-10 md:h-10 text-white" />
       </button>
@@ -79,12 +82,13 @@ const goBack = () => {
       </div>
     </div>
 
-    <!-- Modal Component -->
     <Modal
       :isOpen="activeModal"
       :title="modalData.title"
       :content="modalData.content"
       :variant="modalData.variant"
+      :isCarousel="modalData.isCarousel"
+      :carouselContent="modalData.carouselContent"
       @close="activeModal = false"
     />
   </div>

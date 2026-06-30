@@ -18,7 +18,6 @@ const questions = ref([
     textEnd: "agar pekerjaan cepat selesai.",
     correctAnswer: "Membantu",
     currentAnswer: null,
-    // Tambahin properti warna biar tiap soal beda warna (visual cue buat anak)
     theme: "bg-blue-100 border-blue-300 text-blue-900",
   },
   {
@@ -41,6 +40,34 @@ const questions = ref([
     currentAnswer: null,
     theme: "bg-orange-100 border-orange-300 text-orange-900",
   },
+  // SOAL BARU DI TAMBAHKAN DI BAWAH INI:
+  {
+    id: 4,
+    image: "https://tse2.mm.bing.net/th?q=Tradisi+Makan+Bersama+Indonesia",
+    textStart: "Tradisi makan bersama warga untuk bersyukur disebut",
+    textEnd: "bersama.",
+    correctAnswer: "Kenduri",
+    currentAnswer: null,
+    theme: "bg-pink-100 border-pink-300 text-pink-900",
+  },
+  {
+    id: 5,
+    image: "https://tse4.mm.bing.net/th?q=Ilustrasi+Pulang+Kampung+Idul+Fitri",
+    textStart: "Saat libur hari raya, banyak orang melakukan",
+    textEnd: "untuk bertemu keluarga.",
+    correctAnswer: "Mudik",
+    currentAnswer: null,
+    theme: "bg-purple-100 border-purple-300 text-purple-900",
+  },
+  {
+    id: 6,
+    image: "https://tse3.mm.bing.net/th?q=Ilustrasi+Saling+Memaafkan",
+    textStart: "Tradisi berkumpul saat lebaran untuk saling memaafkan adalah",
+    textEnd: "bersama.",
+    correctAnswer: "Halalbihalal",
+    currentAnswer: null,
+    theme: "bg-yellow-100 border-yellow-300 text-yellow-900",
+  },
 ]);
 
 const allChoices = [
@@ -49,6 +76,9 @@ const allChoices = [
   "Menonton",
   "Musyawarah",
   "Tidur",
+  "Kenduri",
+  "Mudik",
+  "Halalbihalal",
 ];
 
 const availableChoices = computed(() => {

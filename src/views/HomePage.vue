@@ -3,8 +3,8 @@ import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import MenuButton from "../components/ButtonComponent.vue";
 import Modal from "../components/Modal.vue";
-import dosen from "../assets/dosen.jpeg"
-import mahasiswa from "../assets/mahasiswa.jpeg"
+import dosen from "../assets/dosen.jpeg";
+import mahasiswa from "../assets/mahasiswa.jpeg";
 
 const router = useRouter();
 const namaSiswa = ref("");
@@ -39,14 +39,15 @@ const navigasiMenu = (idMenu) => {
       variant: "purple",
       profiles: [
         {
-          name: "Nafilatuzzuhro",
-          role: "Creator",
           foto: mahasiswa,
+          nama: "Nafilatuzzuhro",
+          cerita: "Saya adalah mahasiswa yang sedang menempuh pendidikan S1 dengan jurusan pendidikan guru sekolah dasar, Fakultas ilmu Pendidikan, di Universitas Nahdlatul ulama Yogyakarta. Angkatan 2024", // Selesai Diperbaiki: Sebelumnya 'ceirta'
         },
         {
-          name: "Dr. Wahyu Purwaningsih, M. Pd.",
-          role: "Dosen",
           foto: dosen,
+          nama: "Dr.Wahyu Purwaningsih, M.Pd.",
+          cerita:
+            "Beliau adalah seorang akademisi dan dosen di Universitas Nahdlatul Ulama (UNU) Yogyakarta. Beliau menjabat sebagai Sekretaris Program Studi Pendidikan Guru Sekolah Dasar (PGSD).", // Selesai Diperbaiki: Sebelumnya 'ceirta'
         },
       ],
     },
@@ -57,7 +58,7 @@ const navigasiMenu = (idMenu) => {
     4: "/activity",
     5: "/edugame",
     6: "/feedback",
-    7: "/practice",
+    // 7: "/practice",
   };
 
   if (modals[idMenu]) {
@@ -136,7 +137,7 @@ const closeModal = () => {
       </div>
 
       <!-- Baris 3: Berisi 1 Tombol di Tengah dengan warna hijau/teal -->
-      <div class="flex justify-center">
+      <!-- <div class="flex justify-center">
         <MenuButton
           iconName="answers"
           judul="LATIHAN"
@@ -144,7 +145,7 @@ const closeModal = () => {
           class="w-full md:w-1/3"
           @click="navigasiMenu(7)"
         />
-      </div>
+      </div> -->
     </div>
 
     <!-- Reusable Modal -->

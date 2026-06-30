@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive } from "vue";
+import { reactive } from "vue";
 import { useRouter } from "vue-router";
 
 const router = useRouter();
@@ -72,8 +72,9 @@ const handleNextPage = () => {
       <form @submit.prevent="handleNextPage" class="space-y-5">
         <!-- Input Nama -->
         <div class="flex flex-col">
-          <label class="text-sm font-semibold mb-1 text-white">Name</label>
+          <label for="nama" class="text-sm font-semibold mb-1 text-white">Name</label>
           <input
+            id="nama"
             v-model="formData.nama"
             type="text"
             placeholder="Masukkan nama Anda"
@@ -90,8 +91,9 @@ const handleNextPage = () => {
 
         <!-- Input Kelas -->
         <div class="flex flex-col">
-          <label class="text-sm font-semibold mb-1 text-white">Class</label>
+          <label for="kelas" class="text-sm font-semibold mb-1 text-white">Class</label>
           <input
+            id="kelas"
             v-model="formData.kelas"
             type="text"
             placeholder="Contoh: X IPA 1 / 7B"
@@ -108,8 +110,9 @@ const handleNextPage = () => {
 
         <!-- Input Sekolah -->
         <div class="flex flex-col">
-          <label class="text-sm font-semibold mb-1 text-white">School</label>
+          <label for="sekolah" class="text-sm font-semibold mb-1 text-white">School</label>
           <input
+            id="sekolah"
             v-model="formData.sekolah"
             type="text"
             placeholder="Enter your school name"

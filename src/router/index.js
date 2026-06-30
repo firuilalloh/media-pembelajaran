@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import RegPage from "../views/RegPage.vue";
-import NextPage from "../views/NextPage.vue";
+import SigninPage from "../views/SigninPage.vue";
 import HomePage from "../views/HomePage.vue";
 import ActivityPage from "../views/ActivityPage.vue";
 import EduGamePage from "../views/EduGamePage.vue";
@@ -14,9 +14,9 @@ const routes = [
     component: RegPage,
   },
   {
-    path: "/next",
-    name: "NextPage",
-    component: NextPage,
+    path: "/signin",
+    name: "SigninPage",
+    component: SigninPage,
   },
   {
     path: "/home",
