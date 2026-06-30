@@ -3,11 +3,11 @@ import imgKerjaBakti from "../assets/kerjabakti.jpg";
 import imgMudik from "../assets/mudik.jpg";
 import imgKenduri from "../assets/kenduri.jpg";
 import imgMusyawarah from "../assets/musyawarah.jpg";
-import imgGotongroyong from "../assets/gotongroyong.jpg";
+import imgTahlilan from "../assets/tahlilan.jpg";
 import imgNyekar from "../assets/nyekar.jpg";
 import imgThr from "../assets/thr.jpg";
 import imgHantaran from "../assets/hantaran.jpg";
-import imgPalangpintu from "../assets/palangpintu.jpg";
+import imgKupatan from "../assets/kupatan.jpeg";
 
 export const act1Questions = [
   {
@@ -78,24 +78,64 @@ export const act2Data = [
   { id: 3, src: imgMusyawarah, name: "Musyawarah" },
   { id: 4, src: imgMudik, name: "Mudik" },
   { id: 5, src: imgKenduri, name: "Kenduri" },
-  { id: 6, src: imgGotongroyong, name: "Gotong Royong" },
+  { id: 6, src: imgTahlilan, name: "Tahlilan" },
   { id: 7, src: imgNyekar, name: "Nyekar" },
   { id: 8, src: imgHantaran, name: "Hantaran" },
   { id: 9, src: imgThr, name: "THR" },
-  { id: 10, src: imgPalangpintu, name: "Palang Pintu" },
+  { id: 10, src: imgKupatan, name: "Kupatan" },
 ];
 
 export const act3Questions = [
-  { id: 1, text: "Kerja bakti dilakukan secara bersama-sama untuk kebersihan lingkungan.", correct: true },
-  { id: 2, text: "Tradisi keluarga hanya boleh dilakukan di sekolah saja.", correct: false },
-  { id: 3, text: "Musyawarah adalah cara yang baik untuk mencapai kesepakatan bersama.", correct: true },
-  { id: 4, text: "Membantu tetangga yang sedang kesulitan adalah contoh gotong royong.", correct: true },
-  { id: 5, text: "Kita boleh membuang sampah sembarangan di lingkungan rumah.", correct: false },
-  { id: 6, text: "Tradisi mudik biasanya dilakukan saat hari raya besar keagamaan.", correct: true },
-  { id: 7, text: "Menghormati perbedaan budaya di Indonesia itu tidak penting.", correct: false },
-  { id: 8, text: "Gotong royong membuat pekerjaan berat menjadi terasa lebih ringan.", correct: true },
-  { id: 9, text: "Kita hanya perlu menolong teman yang kita kenal saja.", correct: false },
-  { id: 10, text: "Melestarikan tradisi adalah tugas generasi muda juga.", correct: true }
+  {
+    id: 1,
+    text: "Kerja bakti dilakukan secara bersama-sama untuk kebersihan lingkungan.",
+    correct: true,
+  },
+  {
+    id: 2,
+    text: "Tradisi keluarga hanya boleh dilakukan di sekolah saja.",
+    correct: false,
+  },
+  {
+    id: 3,
+    text: "Musyawarah adalah cara yang baik untuk mencapai kesepakatan bersama.",
+    correct: true,
+  },
+  {
+    id: 4,
+    text: "Membantu tetangga yang sedang kesulitan adalah contoh gotong royong.",
+    correct: true,
+  },
+  {
+    id: 5,
+    text: "Kita boleh membuang sampah sembarangan di lingkungan rumah.",
+    correct: false,
+  },
+  {
+    id: 6,
+    text: "Tradisi mudik biasanya dilakukan saat hari raya besar keagamaan.",
+    correct: true,
+  },
+  {
+    id: 7,
+    text: "Menghormati perbedaan budaya di Indonesia itu tidak penting.",
+    correct: false,
+  },
+  {
+    id: 8,
+    text: "Gotong royong membuat pekerjaan berat menjadi terasa lebih ringan.",
+    correct: true,
+  },
+  {
+    id: 9,
+    text: "Kita hanya perlu menolong teman yang kita kenal saja.",
+    correct: false,
+  },
+  {
+    id: 10,
+    text: "Melestarikan tradisi adalah tugas generasi muda juga.",
+    correct: true,
+  },
 ];
 
 export const act4Questions = [
@@ -108,5 +148,5 @@ export const act4Questions = [
   "Apa arti tradisi menurut pendapatmu?",
   "Sebutkan satu tradisi di daerahmu!",
   "Bagaimana cara menghargai perbedaan?",
-  "Apa manfaat saling memaafkan saat Idulfitri?"
+  "Apa manfaat saling memaafkan saat Idulfitri?",
 ];

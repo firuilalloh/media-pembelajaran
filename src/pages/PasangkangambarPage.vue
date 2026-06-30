@@ -52,7 +52,7 @@ const shuffledNames = computed(() => {
 </script>
 
 <template>
-  <div class="max-w-4xl mx-auto p-4">
+  <div class="max-w-4xl mx-auto">
     <!-- Instruksi Menarik -->
     <div
       class="bg-yellow-400 p-4 rounded-3xl mb-6 text-center transform rotate-1 shadow-lg border-b-8 border-yellow-600"
