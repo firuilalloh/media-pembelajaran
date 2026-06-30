@@ -1,8 +1,8 @@
 import imgHalal from "../assets/halalbihalal.jpg";
 import imgKerjaBakti from "../assets/kerjabakti.jpg";
 import imgMudik from "../assets/mudik.jpg";
-import imgKenduri from "../assets/kenduri.jpg";
-import imgMusyawarah from "../assets/musyawarah.jpg";
+import imgRonda from "../assets/ronda.jpg";
+import imgMusyawarah from "../assets/musyawarah.jpeg";
 import imgTahlilan from "../assets/tahlilan.jpg";
 import imgNyekar from "../assets/nyekar.jpg";
 import imgThr from "../assets/thr.jpg";
@@ -77,7 +77,7 @@ export const act2Data = [
   { id: 2, src: imgKerjaBakti, name: "Kerja Bakti" },
   { id: 3, src: imgMusyawarah, name: "Musyawarah" },
   { id: 4, src: imgMudik, name: "Mudik" },
-  { id: 5, src: imgKenduri, name: "Kenduri" },
+  { id: 5, src: imgRonda, name: "Ronda" },
   { id: 6, src: imgTahlilan, name: "Tahlilan" },
   { id: 7, src: imgNyekar, name: "Nyekar" },
   { id: 8, src: imgHantaran, name: "Hantaran" },
