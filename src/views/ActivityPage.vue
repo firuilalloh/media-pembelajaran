@@ -103,7 +103,7 @@ const activitiesMenu = [
 
       <div
         v-else
-        class="bg-[#fffdf5] p-6 md:p-10 rounded-[2.5rem] shadow-[0_10px_25px_-5px_rgba(0,0,0,0.3)] border-4 border-yellow-300"
+        class="bg-[#fffdf5] p-6 md:p-10 rounded-4xl shadow-[0_10px_25px_-5px_rgba(0,0,0,0.3)] border-4 border-yellow-300"
       >
         <TebaktradisiPage v-if="activeActivity === 1" />
         <pasangkangambar-page v-else-if="activeActivity === 2" />
