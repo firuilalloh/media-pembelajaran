@@ -29,7 +29,7 @@ const navigasiMenu = (idMenu) => {
   const modals = {
     1: {
       title: "PETUNJUK PENGGUNAAN",
-      content: `1. Klik icon 🛖 untuk kembali ke menu utama.\n\n2. Gunakan Fitur Interaktif: Manfaatkan edugame dan kuis untuk menguji pemahamanmu.\n\n3. Klik icon 🎵 untuk menonaktifkan music.\n\n4. Klik icon panah kanan ➡️ untuk selanjutnya.\n\n5. icon panah kiri ⬅️ untuk sebelumnya.`,
+      content: `1. Klik icon 🛖 untuk kembali ke menu utama.\n\n2. Gunakan Fitur Interaktif: Manfaatkan edugame dan kuis untuk menguji pemahamanmu.\n\n3. Klik icon 🎵 untuk menonaktifkan music.\n\n4. Klik icon ( panah kanan ) ➡️ untuk selanjutnya.\n\n5. Klik icon ( panah kiri ) ⬅️ untuk sebelumnya.`,
       variant: "blue",
       profiles: null,
     },
